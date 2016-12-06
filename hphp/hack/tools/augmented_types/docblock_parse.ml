@@ -8,8 +8,8 @@
  *
  *)
 
-let r_param = Str.regexp "@param \\([^ \n]+\\) \\(\\$[^ \n]+\\)"
-let r_return = Str.regexp "@return \\([^ \n]+\\)"
+let r_param = Str.regexp "@param[ \t]+\\([^ \n\t]+\\)[ \t]+\\(\\$[^ \n\t]+\\)"
+let r_return = Str.regexp "@return[ \t]+\\([^ \n\t]+\\)"
 
 let ret_key = ""
 
