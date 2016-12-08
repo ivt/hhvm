@@ -97,8 +97,9 @@ type fun_common = {
 type shouldParens = YES | NO | TODO of string
 
 let is_associative = function
-  | Plus | Star | AMpamp | BArbar | Dot
+  | AMpamp | BArbar | Dot
   | Amp | Bar | Xor -> true
+  | Plus | Star
   | Minus | Slash | Lt | Lte | Gt | Gte | Starstar
   | Eqeq | EQeqeq | Diff | Diff2 | Ltlt
   | Gtgt | Percent | Eq _ -> false
